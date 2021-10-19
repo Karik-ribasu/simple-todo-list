@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="./login-register/css/style.css" rel="stylesheet">
+
+
+<body>
+    <div class="container">
+        <div class="input-area">
+            <form class="form" method="POST" action="/" id="login-form" name="Form" onsubmit="return validateSubmit()">
+                <input class="input" type="text" placeholder="usuario" name="username" value="">
+                <input class="input" type="password" placeholder="senha" name="password" value="">
+                <input class="submit" type="submit" value="login" id="submit" required>
+            </form>
+            <p class="redirect-text">Ainda não possui cadastro? <a href="/sign-up">Cadastre-se!</a></p>
+        </div>
+
+    </div>
+</body>
+
+<script src="./login-register/js/script.js"></script>
+
+</html>

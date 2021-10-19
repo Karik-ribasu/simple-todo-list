@@ -1,0 +1,108 @@
+body {
+  background-color: #222;
+  position: relative;
+  height: 100vh;
+}
+
+body * {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  background-color: #222;
+}
+
+@media (max-width: 780px) {
+  .container {
+    top: 0;
+    height: 100vh;
+  }
+}
+
+.input-area .form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input-area .input {
+  height: 50px;
+  width: 75%;
+  border: none;
+  padding: 25px;
+}
+
+.input-area .submit {
+  padding: none;
+  height: 50px;
+  width: 25%;
+  border: none;
+  background-color: #cccccc;
+}
+
+.todo-list {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #fff;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.todo-list .item {
+  padding: 25px;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #AAA;
+  position: relative;
+}
+
+.todo-list .item .content {
+  word-break: break-all;
+  max-width: 650px;
+}
+
+@media (max-width: 780px) {
+  .todo-list .item .content {
+    max-width: unset;
+    width: 80%;
+  }
+}
+
+.todo-list .item .check-item {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: 0.1s opacity ease-in-out;
+}
+
+.todo-list .item .check-item:hover {
+  opacity: 0.7;
+}
+
+.todo-list .item .check-item::before {
+  content: "\2713";
+  font-size: 29px;
+}
+/*# sourceMappingURL=style.css.map */

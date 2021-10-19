@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="/todo-list/css/style.css" rel="stylesheet">
+
+
+<body>
+    <div class="container">
+        <form class="form" method="POST" action="/logout" id="logout-input" name="Logout-Form"
+            onsubmit="return logout()">
+            <input class="submit" type="submit" value="Sair" id="logout-submit" required>
+        </form>
+        <div class="input-area">
+            <div class="form" id="todo-list-input" name="Inset-Form">
+                <input class="input" type="text" placeholder="O que vamos fazer?" name="task" value="" id="input">
+                <button class="submit" id="insert-submit">Adcionar</button>
+            </div>
+        </div>
+        <div class="todo-list" id="todo-list-content">
+
+        </div>
+    </div>
+</body>
+
+<script src="/todo-list/js/script.js"></script>
+
+</html>
